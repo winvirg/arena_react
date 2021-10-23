@@ -1,17 +1,19 @@
 import { render } from "@testing-library/react";
-import React, {Component} from "react";
 import Enemy from "./Enemy";
 import Hero from "./Hero";
-import imagemEnemy from '../images/enemy.jpg'
-import imagemHero from '../images/hero.jpg'
+import * as constants from '../util/constants'
 
+const imgHero = constants.HERO_IMAGE
+const imgEnemy = constants.ENEMY_IMAGE
+const text = constants.TESTE
 
 function Arena(){ 
     render()
         return(
             <div>
-                <Hero name="Saitama" image={imagemHero}/>
-                <Enemy name="Boros" image={imagemEnemy}/>
+                <h1>{text}</h1>
+                <Hero name="Saitama" image={imgHero}/>
+                <Enemy name="Boros" image={imgEnemy}/>
             </div>
         )
 }
