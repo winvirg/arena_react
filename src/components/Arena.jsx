@@ -5,14 +5,13 @@ import Hero from "./Hero";
 import imagemEnemy from '../images/enemy.jpg'
 import imagemHero from '../images/hero.jpg'
 
+
 function Arena(){ 
     render()
         return(
             <div>
-                <Hero name="Saitama"/>
-                <img src={imagemHero} height="100px" />
-                <Enemy name="Boros"/>
-                <img src={imagemEnemy} height="100px"/>
+                <Hero name="Saitama" image={imagemHero}/>
+                <Enemy name="Boros" image={imagemEnemy}/>
             </div>
         )
 }
